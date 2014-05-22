@@ -1,0 +1,38 @@
+{
+  "name": "lpoppublish",
+  "version": "0.0.1",
+  "description": "This app will pop messages from N lists and publishe them to N channels",
+  "main": "lib/lpoppublish.coffee",
+  "bin": {
+    "lpoppublish": "./bin/lpoppublish.coffee"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NathanGRomano/lpoppublish.git"
+  },
+  "keywords": [
+    "redis",
+    "lpop",
+    "publish"
+  ],
+  "author": "Nathan G. Romano <nathan.g.romano@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanGRomano/lpoppublish/issues"
+  },
+  "homepage": "https://github.com/NathanGRomano/lpoppublish",
+  "dependencies": {
+    "redis": "^0.10.3",
+    "hiredis": "^0.1.16",
+    "coffee-script": "^1.7.1",
+    "commander": "^2.2.0"
+  },
+  "devDependencies": {
+    "grunt-jasmine-bundle": "^0.2.0",
+    "grunt-cli": "^0.1.13",
+    "grunt": "^0.4.5"
+  }
+}
