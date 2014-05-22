@@ -16,6 +16,29 @@ If you would like to install lpoppublish as a command line tool
 
     > npm install -g
 
+# Running the Application
+
+Start off by
+
+    > lpoppublish
+
+You will get this output
+
+```
+  Usage: lpoppublish.coffee [options]
+
+  Options:
+
+    -h, --help               output usage information
+    -V, --version            output the version number
+    -q, --queues <string>    the queues to read from
+    -c, --channels <string>  the channels to write to
+```
+
+Here is an example of listening on 3 lists and publishing to 3 channels
+
+    > lpoppublish -q a,b,c -c a,b,c
+
 # Running Tests
 
 ## Unit Tests
@@ -30,3 +53,4 @@ To run the tets, just run grunt
 
 # TODO
 
+CPU intensive.  Maybe use a sleep.  Currently I am using setImmediate() in the #run method
