@@ -7,14 +7,14 @@ describe 'lpoppublish should listen for data on given lists and publish data ont
   Given -> @max = @lists.length * @channels.length
   Given -> @count = 0
   Given -> @captured = {}
-  Given -> @command = __dirname + '/../bin/lpoppublish.coffee -q ' + @lists.join(',') + ' -c ' + @channels.join(',')
+  Given -> @command = __dirname + '/../bin/lpoppublish.coffee -q ' + @lists.join(',') + ' -c ' + @channels.join(',') + ' -r 1 -i 100 '
 
   Given ->
     @subscriber = require('redis').createClient()
     @subscriber.subscribe channel for channel in @channels
   Given -> @publisher = require('redis').createClient()
 
-  Given -> @lpoppublish = exec @command, (err, stdout, stderr) ->
+  Given -> @lpoppublish = exec @command, (err, stdout, stderr) -> console.log stdout, stderr
 
   Given (done) ->
     @subscriber.on 'message', (channel, message) =>

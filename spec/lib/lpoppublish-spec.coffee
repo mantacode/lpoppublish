@@ -44,6 +44,34 @@ describe 'lpoppublish', ->
         When -> @res = @instance.channels('a').channels()
         Then -> expect(@res).toEqual ['a']
 
+     describe '#requests', ->
+
+      context 'with no arguments', ->
+        When -> @res = @instance.requests()
+        Then -> expect(@res).toEqual 1
+
+      context 'with valid arguments', ->
+        When -> @res = @instance.requests(2).requests()
+        Then -> expect(@res).toEqual 2
+
+      context 'with invalid arguments', ->
+        When -> @res = @instance.requests(-2).requests()
+        Then -> expect(@res).toEqual 2
+
+     describe '#interval', ->
+
+      context 'with no arguments', ->
+        When -> @res = @instance.interval()
+        Then -> expect(@res).toEqual 1
+
+      context 'with valid arguments', ->
+        When -> @res = @instance.interval(100).interval()
+        Then -> expect(@res).toEqual 100
+
+      context 'with invalid arguments', ->
+        When -> @res = @instance.interval(-100).interval()
+        Then -> expect(@res).toEqual 100
+
     describe '#start', ->
       # passing true will keep the app from running
       When -> @instance.start true

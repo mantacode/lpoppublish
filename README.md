@@ -2,7 +2,9 @@ lpoppublish will listen for messages on N lists on a redis instance and publish 
 
 # Installation and Environment Setup
 
-Install node.js (See download and isntall instructions here: http://nodejs.org/).
+Install node.js (See download and install instructions here: http://nodejs.org/).
+
+Install redis (See download and install instructions http://redis.io/topics/quickstart)
 
 Clone this repository
 
@@ -33,11 +35,13 @@ You will get this output
     -V, --version            output the version number
     -q, --queues <string>    the queues to read from
     -c, --channels <string>  the channels to write to
+    -i, --interval <number>  the number of miliseconds to wait before polling
+    -r, --requests <number>  the number of requests to make each interval
 ```
 
-Here is an example of listening on 3 lists and publishing to 3 channels
+Here is an example of listening on 3 lists and publishing to 3 channels with a sleep of 100 miliseconds and we poll twice during each interval.
 
-    > lpoppublish -q a,b,c -c a,b,c
+    > lpoppublish -q a,b,c -c a,b,c -i 100 -r 2
 
 # Running Tests
 
