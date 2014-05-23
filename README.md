@@ -57,4 +57,4 @@ To run the tets, just run grunt
 
 # TODO
 
-CPU intensive.  Maybe use a sleep.  Currently I am using setImmediate() in the #run method
+Specify the host and port in which redis lives
