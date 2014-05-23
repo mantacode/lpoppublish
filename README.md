@@ -6,6 +6,10 @@ Install node.js (See download and install instructions here: http://nodejs.org/)
 
 Install redis (See download and install instructions http://redis.io/topics/quickstart)
 
+Install coffee-script
+
+		> npm install -g coffee-script
+
 Clone this repository
 
     > git clone git@github.com:NathanGRomano/lpoppublish.git
