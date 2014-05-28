@@ -1,6 +1,6 @@
 {
   "name": "lpoppublish",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This app will pop messages from N lists and publishe them to N channels",
   "main": "lib/lpoppublish.coffee",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:NathanGRomano/lpoppublish.git"
+    "url": "git@github.com:mantacode/lpoppublish.git"
   },
   "keywords": [
     "redis",
@@ -27,9 +27,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NathanGRomano/lpoppublish/issues"
+    "url": "https://github.com/mantacode/lpoppublish/issues"
   },
-  "homepage": "https://github.com/NathanGRomano/lpoppublish",
+  "homepage": "https://github.com/mantacode/lpoppublish",
   "dependencies": {
     "redis": "^0.10.3",
     "hiredis": "^0.1.16",
