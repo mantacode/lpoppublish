@@ -18,7 +18,13 @@
     "lpop",
     "publish"
   ],
-  "author": "Nathan G. Romano <nathan.g.romano@gmail.com>",
+  "author":"Manta Media <code@manta.com>",
+  "contributors": [
+    {
+      "name": "Nathan G. Romano",
+      "email": "Nathan G. Romano <nathan.g.romano@gmail.com>"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NathanGRomano/lpoppublish/issues"

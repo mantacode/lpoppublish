@@ -10,6 +10,12 @@ Install coffee-script
 
 		> npm install -g coffee-script
 
+## General installation
+
+    > npm install lpoppublish -g
+
+## For development / testing
+
 Clone this repository
 
     > git clone git@github.com:NathanGRomano/lpoppublish.git
