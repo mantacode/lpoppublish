@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mantacode/lpoppublish.svg?branch=master)](https://travis-ci.org/mantacode/lpoppublish)
+
 lpoppublish will listen for messages on N lists on a redis instance and publish those messages on redis channels.
 
 # Installation and Environment Setup
