@@ -1,6 +1,6 @@
 {
   "name": "lpoppublish",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This app will pop messages from N lists and publishe them to N channels",
   "main": "lib/lpoppublish.coffee",
   "bin": {

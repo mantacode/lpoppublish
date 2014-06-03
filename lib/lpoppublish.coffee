@@ -52,10 +52,10 @@ class LPopPublish
         tick = =>
           if @running
             @run()
-            if @interval == 1
+            if @interval() == 1
               setImmediate tick
             else
-              setTimeout tick, @interval
+              setTimeout tick, @interval()
         tick()
     @
 
